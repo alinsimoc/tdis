@@ -1,28 +1,16 @@
 @import "tailwindcss";
 
-/* Culori sistem iOS (light / dark) */
+/* Culori sistem iOS (doar dark) */
 :root {
-  --canvas: #f2f2f7;
-  --card: #ffffff;
-  --label: #000000;
-  --label-2: #6e6e73;
-  --sep: #c6c6c8;
-  --pressed: #e5e5ea;
-  --tint: #0066cc;
-  --accent: #c93400;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --canvas: #000000;
-    --card: #1c1c1e;
-    --label: #ffffff;
-    --label-2: #98989d;
-    --sep: #38383a;
-    --pressed: #2c2c2e;
-    --tint: #0a84ff;
-    --accent: #ff9f0a;
-  }
+  color-scheme: dark;
+  --canvas: #000000;
+  --card: #1c1c1e;
+  --label: #ffffff;
+  --label-2: #98989d;
+  --sep: #38383a;
+  --pressed: #2c2c2e;
+  --tint: #0a84ff;
+  --accent: #ff9f0a;
 }
 
 @theme inline {

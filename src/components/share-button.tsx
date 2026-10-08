@@ -73,7 +73,7 @@ export function ShareButton() {
           </h2>
           <p className="mt-1 text-[15px] text-label-2">Scanează codul cu camera telefonului</p>
 
-          {/* Fundal alb mereu, ca să se poată scana și în dark mode */}
+          {/* Fundal alb, ca să se poată scana */}
           <div className="mx-auto mt-6 aspect-square w-full max-w-64 rounded-2xl bg-white p-4">
             {url && <Qr text={url} />}
           </div>

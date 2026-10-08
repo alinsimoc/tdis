@@ -29,6 +29,17 @@ export default function Home() {
         </a>
       </header>
       <AgendaList />
+      <footer className="mt-12 text-center text-[13px] text-label-2">
+        Dezvoltat de{" "}
+        <a
+          href="https://softisfy.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex min-h-11 items-center font-medium text-label active:opacity-50"
+        >
+          softisfy.com
+        </a>
+      </footer>
     </main>
   );
 }
