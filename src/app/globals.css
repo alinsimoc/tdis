@@ -1,26 +1,43 @@
 @import "tailwindcss";
 
+/* Culori sistem iOS (light / dark) */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --canvas: #f2f2f7;
+  --card: #ffffff;
+  --label: #000000;
+  --label-2: #6e6e73;
+  --sep: #c6c6c8;
+  --pressed: #e5e5ea;
+  --tint: #0066cc;
+  --accent: #c93400;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --canvas: #000000;
+    --card: #1c1c1e;
+    --label: #ffffff;
+    --label-2: #98989d;
+    --sep: #38383a;
+    --pressed: #2c2c2e;
+    --tint: #0a84ff;
+    --accent: #ff9f0a;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@theme inline {
+  --font-sans: -apple-system, BlinkMacSystemFont, var(--font-inter), system-ui, sans-serif;
+  --color-canvas: var(--canvas);
+  --color-card: var(--card);
+  --color-label: var(--label);
+  --color-label-2: var(--label-2);
+  --color-sep: var(--sep);
+  --color-pressed: var(--pressed);
+  --color-tint: var(--tint);
+  --color-accent: var(--accent);
+}
+
+html {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-text-size-adjust: 100%;
 }
