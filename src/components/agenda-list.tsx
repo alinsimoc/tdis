@@ -100,7 +100,7 @@ function Row({ s, st }: { s: Session; st: Status }) {
 
   const body = (
     <>
-      <div className="w-12 shrink-0 pt-3.5 tabular-nums">
+      <div className="w-12 shrink-0 pt-3.5 pb-3 tabular-nums">
         <time className="block text-[15px] font-semibold">{s.start}</time>
         <time className="block text-[13px] text-label-2">{s.end}</time>
       </div>
@@ -111,27 +111,31 @@ function Row({ s, st }: { s: Session; st: Status }) {
               <LiveDot /> Acum
             </p>
           )}
-          {s.kind && <p className="text-[13px] font-medium text-label-2">{s.kind}</p>}
-          <p
-            className={
-              s.isBreak
-                ? "text-[17px] leading-snug text-label-2"
-                : "text-[17px] leading-snug font-semibold"
-            }
-          >
-            {s.title}
-          </p>
-          {(s.room || s.lang) && (
-            <p className="mt-0.5 flex flex-wrap items-center gap-x-2 text-[15px] text-label-2">
-              {s.room && (
-                <span className={parallel ? "font-medium text-accent" : undefined}>{s.room}</span>
+          {s.isBreak ? (
+            <>
+              <p className="text-[17px] leading-snug font-semibold">{s.title}</p>
+              <p className="mt-0.5 text-[15px] text-label-2">
+                {duration(s)}
+                {s.room && ` · ${s.room}`}
+              </p>
+            </>
+          ) : (
+            <>
+              {s.kind && <p className="text-[13px] font-medium text-label-2">{s.kind}</p>}
+              <p className="text-[17px] leading-snug font-semibold">{s.title}</p>
+              {(s.room || s.lang) && (
+                <p className="mt-0.5 flex flex-wrap items-center gap-x-2 text-[15px] text-label-2">
+                  {s.room && (
+                    <span className={parallel ? "font-medium text-accent" : undefined}>{s.room}</span>
+                  )}
+                  {s.lang && (
+                    <span className="rounded-md border border-sep px-1.5 text-[11px] font-semibold leading-5 tracking-wide">
+                      {s.lang}
+                    </span>
+                  )}
+                </p>
               )}
-              {s.lang && (
-                <span className="rounded-md border border-sep px-1.5 text-[11px] font-semibold leading-5 tracking-wide">
-                  {s.lang}
-                </span>
-              )}
-            </p>
+            </>
           )}
         </div>
         {linked && (
@@ -144,7 +148,7 @@ function Row({ s, st }: { s: Session; st: Status }) {
   );
 
   const cls = `flex gap-3 pl-4 transition-colors ${st === "past" ? "opacity-45" : ""} ${
-    st === "live" ? "bg-tint/8" : ""
+    st === "live" ? "bg-tint/12" : s.isBreak ? "bg-tint/6" : ""
   }`;
 
   return (
@@ -158,4 +162,10 @@ function Row({ s, st }: { s: Session; st: Status }) {
       )}
     </li>
   );
+}
+
+function duration(s: Session) {
+  const m = toMinutes(s.end) - toMinutes(s.start);
+  const h = Math.floor(m / 60);
+  return [h && `${h} h`, m % 60 && `${m % 60} min`].filter(Boolean).join(" ");
 }
