@@ -1,4 +1,4 @@
-export type Person = { name: string; role: string };
+export type Person = { name: string; role?: string };
 
 export type Session = {
   id: string;
@@ -17,6 +17,7 @@ export type Session = {
 
 export const event = {
   name: "Transilvania Digital Innovation Summit",
+  travelInfo: "https://heyzine.com/flip-book/15511769a6.html",
   edition: "Ediția a II-a",
   date: "2026-10-08",
   dateLabel: "Joi, 8 octombrie 2026",
@@ -77,7 +78,7 @@ export const sessions: Session[] = [
     start: "10:00",
     end: "10:20",
     title: "Deschiderea evenimentului",
-    kind: "Organizatori și parteneri",
+    kind: "Organizatori și parteneri TEDIHT",
     room: MAIN,
     description: [
       "Transilvania Digital Innovation Summit este un concept creat în jurul unui parteneriat: Transilvania IT Cluster, Hygia SA, Universitatea Babeș-Bolyai, Universitatea Tehnică din Cluj-Napoca, RODIH și INCDTIM - șase organizații care au ales să construiască împreună The European Digital Innovation Hub in Transilvania.",
@@ -86,9 +87,9 @@ export const sessions: Session[] = [
     speakers: [
       bianca,
       morcan,
-      { name: "Daniela Popescu", role: "Prorector, Universitatea Tehnică din Cluj-Napoca" },
+      { name: "Daniela Popescu", role: "Prorector Universitatea Tehnică din Cluj-Napoca" },
       raita,
-      { name: "Christian Săcărea", role: "Prorector, Universitatea Babeș-Bolyai" },
+      { name: "Christian Săcărea", role: "Prorector Universitatea Babeș-Bolyai" },
     ],
   },
   {
@@ -130,8 +131,8 @@ export const sessions: Session[] = [
     kind: "Keynote 2",
     room: MAIN,
     description: [
-      "Antreprenoriatul românesc traversează o perioadă în care presiunile economice, schimbările tehnologice, accesul la competențe și nevoia de adaptare rapidă schimbă modul în care companiile cresc și iau decizii.",
-      "Pornind de la experiența sa în reprezentarea mediului antreprenorial și a IMM-urilor din România, Florin Jianu va vorbi despre principalele provocări cu care se confruntă astăzi antreprenorii, dar și despre oportunitățile care pot accelera dezvoltarea companiilor românești. Discuția va aduce în prim-plan competitivitatea, investițiile, oamenii și capacitatea organizațiilor de a se adapta într-un context economic tot mai complex.",
+      "Antreprenoriatul românesc traversează o perioadă în care presiunile economice, schimbările tehnologice, accesul la competențe și nevoia de adaptare rapidă schimbă modul în care companiile cresc și iau decizii. Pornind de la experiența sa în reprezentarea mediului antreprenorial și a IMM-urilor din România, Florin Jianu va vorbi despre principalele provocări cu care se confruntă astăzi antreprenorii, dar și despre oportunitățile care pot accelera dezvoltarea companiilor românești.",
+      "Discuția va aduce în prim-plan competitivitatea, investițiile, oamenii și capacitatea organizațiilor de a se adapta într-un context economic tot mai complex.",
     ],
     speakers: [
       { name: "Florin Jianu", role: "Președinte al Consiliului Național al IMM-urilor din România" },
@@ -141,7 +142,7 @@ export const sessions: Session[] = [
     id: "panel-1",
     start: "11:20",
     end: "12:10",
-    title: "Cum construim companii și organizații AI-ready?",
+    title: "Cum Construim Companii și Organizații AI-Ready?",
     kind: "Panel 1",
     room: MAIN,
     description: [
@@ -157,7 +158,7 @@ export const sessions: Session[] = [
       { name: "Ana Maria Bușoniu", role: "Director general OIPSI în cadrul ADR și director general NCC RO" },
       {
         name: "Adrian Groza",
-        role: "Prorector - Infrastructură Informatică și Digitalizare, UTCN & Cercetător științific, Artificial Intelligence Research Institute (AIRi)",
+        role: "Prorector - Infrastructură Informatică și Digitalizare, UTCN & Cercetător științific - Artificial Intelligence Research Institute (AIRi)",
       },
       roja,
       { name: "Dr. ing. Adrian Victor Vevera", role: "Director general ICI București" },
@@ -193,7 +194,6 @@ export const sessions: Session[] = [
     start: "12:10",
     end: "12:20",
     title: "Mesaj video",
-    kind: "Perspectivă europeană",
     room: MAIN,
     description: [
       "Intervenția va oferi o perspectivă europeană asupra rolului pe care tehnologia, inovarea și transformarea digitală îl au în dezvoltarea economiei și a societății, evidențiind importanța inițiativelor europene și a ecosistemelor de inovare, inclusiv contribuția EDIH-urilor la susținerea proceselor de digitalizare.",
@@ -217,7 +217,7 @@ export const sessions: Session[] = [
     id: "panel-2",
     start: "12:40",
     end: "13:30",
-    title: "Digitalizarea serviciilor publice: instituții pregătite pentru viitor",
+    title: "Digitalizarea serviciilor publice: Instituții pregătite pentru viitor",
     kind: "Panel 2",
     room: MAIN,
     description: [
@@ -229,26 +229,25 @@ export const sessions: Session[] = [
       { name: "Gabriel Crețu", role: "CEO Evozon" },
       {
         name: "Delia Herghea",
-        role: "Medic primar epidemiolog, Institutul Oncologic „Prof. Dr. Ion Chiricuță” Cluj-Napoca",
+        role: "Medic primar epidemiolog la Institutul Oncologic „Prof. Dr. Ion Chiricuță” din Cluj-Napoca",
       },
       { name: "Mihai Horea", role: "Head of IT, NTT DATA Romania" },
       { name: "Sorin Pop", role: "CEO Creative Space" },
-      { name: "Claudiu Salanță", role: "Arhitect-șef, Consiliul Județean Cluj" },
+      { name: "Claudiu Salanță", role: "Arhitect-șef Consiliul Județean Cluj" },
     ],
     moderators: [
       {
         name: "Marcel Pîrvu",
-        role: "Lect. univ. dr., Departamentul de Economie Politică, FSEGA, Universitatea Babeș-Bolyai",
+        role: "Lec. univ. dr. Departamentul de Economie Politică, Facultatea de Științe Economice și Gestiunea Afacerilor, Universitatea Babeș-Bolyai Cluj-Napoca",
       },
     ],
   },
-  { id: "pranz", start: "13:30", end: "14:30", title: "Masă de prânz", isBreak: true },
+  { id: "pranz", start: "13:30", end: "14:30", title: "Masă de prânz", room: MAIN, isBreak: true },
   {
     id: "bune-practici",
     start: "14:30",
     end: "14:50",
     title: "Exemple de bune practici",
-    kind: "Prezentări scurte",
     room: MAIN,
     description: [
       "O serie de prezentări individuale de câte 10 minute, susținute de companii cu experiență în implementarea tehnologiilor digitale. Fiecare vorbitor aduce în față un caz concret din propria organizație - ce au construit, cum au făcut-o, ce a mers și ce au învățat pe parcurs.",
@@ -256,7 +255,7 @@ export const sessions: Session[] = [
     ],
     speakers: [
       { name: "Patrik Rojan", role: "CEO Mixtazure" },
-      { name: "TBA", role: "Urmează să fie anunțat" },
+      { name: "TBA" },
     ],
   },
   {
@@ -272,7 +271,7 @@ export const sessions: Session[] = [
     speakers: [
       {
         name: "Dragoș Barbu",
-        role: "Head of Cloud Computing and a Recognised Researcher (R2), ICI București",
+        role: "Head of Cloud Computing and a Recognised Researcher (R2) at ICI Bucharest",
       },
       { name: "Petrică Ciupitu-Istrate", role: "Director Monitorizare OIPSI" },
       { name: "Adina Cristea", role: "Manager proiect TEDIHT" },
@@ -280,7 +279,7 @@ export const sessions: Session[] = [
       { name: "Lidia Mocanu", role: "Director Strategic EDIH-DIZ" },
       {
         name: "Marius Niculae",
-        role: "Coordonator EDIH DIGIVEST & Director al departamentului pentru Afaceri Internaționale și Sprijin IMM, ADR Vest",
+        role: "Coordonator EDIH DIGIVEST & Director al departamentului pentru Afaceri Internaționale și Sprijin IMM - ADR Vest",
       },
     ],
     moderators: [stan],
@@ -302,7 +301,7 @@ export const sessions: Session[] = [
     id: "fireside-1",
     start: "15:10",
     end: "16:00",
-    title: "Leadership în era inteligenței artificiale",
+    title: "Leadership în Era Inteligenței Artificiale",
     kind: "Fireside Chat",
     room: MAIN,
     description: [
@@ -326,7 +325,7 @@ export const sessions: Session[] = [
     id: "panel-3",
     start: "16:00",
     end: "17:00",
-    title: "EDIH-urile: instrumentele europene pentru accelerarea digitalizării",
+    title: "EDIH-urile: Instrumentele europene pentru accelerarea digitalizării",
     kind: "Panel 3",
     room: MAIN,
     description: [
@@ -355,7 +354,7 @@ export const sessions: Session[] = [
     room: MAIN,
     description: [
       "Există un moment în evoluția fiecărei companii în care inteligența artificială încetează să fie „un proiect al departamentului IT” și devine o resursă strategică - la fel de importantă ca oamenii sau capitalul. Din acel moment se schimbă totul: modelul de business, structura costurilor, profilul angajaților, ritmul deciziilor și chiar felul în care se măsoară performanța.",
-      "Această conversație explorează exact acea tranziție. Antreprenori și lideri de business care o trăiesc acum discută deschis despre cum se administrează o companie în care AI lucrează alături de oameni: ce funcții se transformă, ce roluri noi apar, cum se recalibrează bugetele și ce înseamnă avantaj competitiv într-o piață în care tehnologia devine accesibilă tuturor.",
+      "Această conversație explorează exact acea tranziție. Antreprenori și lideri de business care o trăiesc acum discută deschis despre cum se administrează o companie în care AI lucrează alături de oameni: ce funcții se transformă, ce roluri noi apar, cum se recalibrează bugetele și ce înseamnă avantaj competitiv într-o piață în care tehnologia devine accesibilă tuturor. O sesiune pentru decidenții care vor să înțeleagă ce înseamnă AI pentru felul în care își conduc afacerea.",
     ],
     speakers: [
       { name: "Mihai Cărăbaș", role: "Fondator Legal Accelerators" },
@@ -371,10 +370,9 @@ export const sessions: Session[] = [
     start: "18:25",
     end: "18:35",
     title: "De la concluzii la următorul pas: TEDIHT 2.0",
-    kind: "Închidere",
     room: MAIN,
   },
-  { id: "cina", start: "18:35", end: "21:00", title: "Cină și networking", isBreak: true },
+  { id: "cina", start: "18:35", end: "21:00", title: "Cină și networking", room: MAIN, isBreak: true },
 ];
 
 export const allSessions = [...allDay, ...sessions];

@@ -130,7 +130,7 @@ function People({ title, people }: { title: string; people: Person[] }) {
             </span>
             <div className="min-w-0 flex-1 border-t border-sep/60 py-3 pr-4 group-first:border-t-0">
               <p className="text-[17px] leading-snug font-medium">{p.name}</p>
-              <p className="mt-0.5 text-[15px] leading-snug text-label-2">{p.role}</p>
+              {p.role && <p className="mt-0.5 text-[15px] leading-snug text-label-2">{p.role}</p>}
             </div>
           </li>
         ))}
