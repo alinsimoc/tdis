@@ -81,8 +81,7 @@ export const sessions: Session[] = [
     kind: "Organizatori și parteneri TEDIHT",
     room: MAIN,
     description: [
-      "Transilvania Digital Innovation Summit este un concept creat în jurul unui parteneriat: Transilvania IT Cluster, Hygia SA, Universitatea Babeș-Bolyai, Universitatea Tehnică din Cluj-Napoca, RODIH și INCDTIM - șase organizații care au ales să construiască împreună The European Digital Innovation Hub in Transilvania.",
-      "Partenerii urcă pe scenă și povestesc despre drumul parcurs, despre ce a însemnat colaborarea dintre mediul academic, cercetare, business și inovare, și despre de ce un ecosistem se construiește doar împreună.",
+      "Transilvania Digital Innovation Summit este un concept creat în jurul unui parteneriat: Transilvania IT Cluster, Hygia SA, Universitatea Babeș-Bolyai, Universitatea Tehnică din Cluj-Napoca, RODIH și INCDTIM - șase organizații care au ales să construiască împreună The European Digital Innovation Hub in Transilvania. Partenerii urcă pe scenă și povestesc despre drumul parcurs, despre ce a însemnat colaborarea dintre mediul academic, cercetare, business și inovare, și despre de ce un ecosistem se construiește doar împreună.",
     ],
     speakers: [
       bianca,
@@ -100,8 +99,7 @@ export const sessions: Session[] = [
     kind: "Spectacol de deschidere",
     room: MAIN,
     description: [
-      "Spectacolul digital creat de Wink Public Media, partener GOLD al TDI Summit, reprezintă o metaforă vizuală a drumului parcurs de ecosistemul digital din România: de la primele semințe puse de TEDIHT, la rezultate care prind rădăcini și încep să dea roade.",
-      "Lumină, sunet și tehnologie care spun, fără cuvinte, tema acestei ediții: tehnologia nu mai este o promisiune, ci un ecosistem viu, în plină creștere.",
+      "Spectacolul digital creat de Wink Public Media, partener GOLD al TDI Summit, reprezintă o metaforă vizuală a drumului parcurs de ecosistemul digital din România: de la primele semințe puse de TEDIHT, la rezultate care prind rădăcini și încep să dea roade. Lumină, sunet și tehnologie care spun, fără cuvinte, tema acestei ediții: tehnologia nu mai este o promisiune, ci un ecosistem viu, în plină creștere.",
     ],
   },
   {
@@ -174,8 +172,7 @@ export const sessions: Session[] = [
     room: "Sala Essens",
     lang: "ENG",
     description: [
-      "O sesiune dedicată companiilor care își pregătesc organizația pentru următoarea etapă de creștere. Reprezentanți ai unor fonduri de investiții din România și din străinătate vorbesc despre ce înseamnă, concret, ca o companie să fie „investment ready”: ce urmăresc investitorii într-o echipă și într-un model de business, ce criterii cântăresc cel mai mult în decizia de finanțare și care sunt cele mai frecvente motive pentru care o companie bună ratează o rundă.",
-      "Discutăm și despre scalarea internațională: cum arată drumul de la piața locală la piețele externe și ce trebuie construit din timp pentru ca acest salt să fie posibil. O oportunitate de a înțelege perspectiva investitorului direct de la sursă și de a intra în contact cu oamenii care finanțează creșterea.",
+      "O sesiune dedicată companiilor care își pregătesc organizația pentru următoarea etapă de creștere. Reprezentanți ai unor fonduri de investiții din România și din străinătate vorbesc despre ce înseamnă, concret, ca o companie să fie „investment ready”: ce urmăresc investitorii într-o echipă și într-un model de business, ce criterii cântăresc cel mai mult în decizia de finanțare și care sunt cele mai frecvente motive pentru care o companie bună ratează o rundă. Discutăm și despre scalarea internațională: cum arată drumul de la piața locală la piețele externe și ce trebuie construit din timp pentru ca acest salt să fie posibil. O oportunitate de a înțelege perspectiva investitorului direct de la sursă și de a intra în contact cu oamenii care finanțează creșterea.",
     ],
     speakers: [
       { name: "Alexandru Chifu", role: "Investor, Nucleo Ventures" },
@@ -208,8 +205,7 @@ export const sessions: Session[] = [
     kind: "Keynote 3",
     room: MAIN,
     description: [
-      "Un keynote despre stadiul și ritmul transformării digitale în administrația publică din România și din Europa. Ce funcționează, ce blochează și care sunt factorii care fac diferența atunci când vorbim despre scalarea digitalizării la nivelul instituțiilor publice.",
-      "Discutăm despre cum arată o administrație „digital-ready” în era inteligenței artificiale și despre politicile, inițiativele și bunele practici europene care pot inspira transformarea digitală la nivel local și regional.",
+      "Un keynote despre stadiul și ritmul transformării digitale în administrația publică din România și din Europa. Ce funcționează, ce blochează și care sunt factorii care fac diferența atunci când vorbim despre scalarea digitalizării la nivelul instituțiilor publice. Discutăm despre cum arată o administrație „digital-ready” în era inteligenței artificiale și despre politicile, inițiativele și bunele practici europene care pot inspira transformarea digitală la nivel local și regional.",
     ],
     speakers: [{ name: "Mirela Mărcuț", role: "Scientific Project Officer - Joint Research Centre" }],
   },
@@ -250,8 +246,7 @@ export const sessions: Session[] = [
     title: "Exemple de bune practici",
     room: MAIN,
     description: [
-      "O serie de prezentări individuale de câte 10 minute, susținute de companii cu experiență în implementarea tehnologiilor digitale. Fiecare vorbitor aduce în față un caz concret din propria organizație - ce au construit, cum au făcut-o, ce a mers și ce au învățat pe parcurs.",
-      "Un format rapid, aplicat, gândit pentru a oferi în scurt timp o imagine variată asupra transformării digitale, așa cum arată ea în practică, pe subiecte și industrii diferite.",
+      "O serie de prezentări individuale de câte 10 minute, susținute de companii cu experiență în implementarea tehnologiilor digitale. Fiecare vorbitor aduce în față un caz concret din propria organizație - ce au construit, cum au făcut-o, ce a mers și ce au învățat pe parcurs. Un format rapid, aplicat, gândit pentru a oferi în scurt timp o imagine variată asupra transformării digitale, așa cum arată ea în practică, pe subiecte și industrii diferite.",
     ],
     speakers: [
       { name: "Patrik Rojan", role: "CEO Mixtazure" },
@@ -305,8 +300,7 @@ export const sessions: Session[] = [
     kind: "Fireside Chat",
     room: MAIN,
     description: [
-      "Cum tranzitează firmele de IT românești perioada ascensiunii inteligenței artificiale și a dezvoltării de soft cu tool-uri AI? Când o parte din analiză, execuție și creativitate e delegată tehnologiei, ce rămâne uman în conducerea unei organizații? Cum se schimbă structura echipelor, criteriile de recrutare și felul în care se iau deciziile?",
-      "Lideri ai unora dintre cele mai importante companii de tehnologie din România împărtășesc experiențe directe: cum și-au adaptat organizațiile, ce greșeli au făcut pe parcurs și ce competențe caută acum la oamenii-cheie.",
+      "Cum tranzitează firmele de IT românești perioada ascensiunii inteligenței artificiale și a dezvoltării de soft cu tool-uri AI? Când o parte din analiză, execuție și creativitate e delegată tehnologiei, ce rămâne uman în conducerea unei organizații? Cum se schimbă structura echipelor, criteriile de recrutare și felul în care se iau deciziile? Lideri ai unora dintre cele mai importante companii de tehnologie din România împărtășesc experiențe directe: cum și-au adaptat organizațiile, ce greșeli au făcut pe parcurs și ce competențe caută acum la oamenii-cheie.",
     ],
     speakers: [
       { name: "Ana-Maria Icătoiu", role: "Prim-vicepreședintă OFA & vicepreședintă FICSIMM" },
@@ -337,7 +331,7 @@ export const sessions: Session[] = [
       { name: "Laura Hizo", role: "Fondator Maximilian Chocolat" },
       { name: "Cosmin Ioaneș", role: "CEO InnoRobotics" },
       morcan,
-      bianca,
+      { name: "Bianca Muntean", role: "Coord. TEDIHT & director executiv Transilvania IT Cluster" },
       { name: "Raul Pal", role: "Director general PSC Automatizări și Instalații" },
       stan,
       raita,

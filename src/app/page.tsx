@@ -79,6 +79,10 @@ export default function Home() {
             Informații despre transport și cazare
           </a>
         </div>
+        <p className="mt-2 text-[13px] leading-snug text-label-2">
+          Aplicația a fost realizată cu ajutorul inteligenței artificiale. Este posibil ca unele
+          informații să nu fie corecte.
+        </p>
       </header>
       <AgendaList />
     </main>
